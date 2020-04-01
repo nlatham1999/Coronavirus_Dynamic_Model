@@ -15,15 +15,28 @@ private:
 	bool recovered;
 	bool recievingMedicalCare;
 	int groupId;
+	int id;
 
 public:
 
 	Person();
 
-	Person(string a, string g);
+	Person(string a, string g, int i);
 
 	string getAge();
 	
 	string getGender();
+
+	void setGroupId(int i);
+
+	int getGroupId();
+
+	int getId();
+
+	void setSick(bool s);
+
+	bool isSick();
+
+
 
 };
